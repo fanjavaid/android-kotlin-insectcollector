@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#34495e</color>
+    <color name="colorPrimaryDark">#2c3e50</color>
+    <color name="colorAccent">#FFA000</color>
+    <color name="colorSuccess">#2ecc71</color>
+    <color name="colorDanger">#FF5252</color>
+
+    <color name="colorBaseGrey">#f4f4f9</color>
+    <color name="colorBaseGrey2">#DEDEDE</color>
+    <color name="colorBaseGrey3">#999999</color>
+    <color name="colorLiteGreen">#b8dbd9</color>
+    <color name="colorBaseGraphite">#586f7c</color>
+</resources>

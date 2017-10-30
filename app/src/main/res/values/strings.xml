@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Insect Collector</string>
+
+    <string name="text_main_insect_sorted_by_name">Sorted by Name</string>
+    <string name="text_main_insect_sorted_by_last_update">Sorted by Last Update</string>
+    <string-array name="text_main_sort_menu">
+        <item>Name</item>
+        <item>Last Update</item>
+    </string-array>
+
+    <string name="text_add_insect_captured_img_content_desc">Result of Captured Image</string>
+    <string name="text_add_insect_remove_captured_img_content_desc">Remove Captured Image</string>
+
+    <string name="text_add_insect_name_label">What\'s that name?</string>
+    <string name="text_add_insect_info_label">Cool explanation</string>
+    <string name="text_add_insect_save_button">Save Changes</string>
+    <string name="text_add_insect_discard_button">Discard</string>
+    <string name="text_add_insect_remaining_char">%1$d / %2$d</string>
+
+    <string name="text_add_insect_name_error">Please enter insect name</string>
+    <string name="text_add_insect_info_error">Information is required</string>
+    <string name="text_add_insect_photo_error">Hi Buddy, We need to know how your insect look like!</string>
+    <string name="text_add_insect_success">Successfully saved!</string>
+
+    <string name="text_add_favorite_success">Successfully added to favorite!</string>
+
+    <string name="text_title_details">Details</string>
+    <string name="text_title_favorite">Favorites</string>
+    <string name="text_title_settings">Settings</string>
+    <string name="text_title_add_new">Add Insect</string>
+    <string name="text_title_update_existing">Update Insect</string>
+
+    <string name="text_discard_confirm_title">Confirmation</string>
+    <string name="text_discard_confirm_message">Are you sure to discard this data %s</string>
+    <string name="text_discard_confirm_button_positive">Discard</string>
+    <string name="text_discard_confirm_button_negative">Cancel</string>
+
+    <string name="text_share_subject">Share about %s</string>
+
+    <string name="action_sort">Sort</string>
+    <string name="action_favorite">Favorites</string>
+    <string name="action_setting">Settings</string>
+    <string name="action_delete">Delete</string>
+
+    <string name="action_save_changes">Save Changes</string>
+
+    <string name="text_detail_insect_dummy_desc">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt
+        \n\n
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="key_pref_listnumers">key_pref_listnumers</string>
+    <string name="default_value_number_of_data">10</string>
+    <string-array name="key_number_of_data">
+        <item>1 item</item>
+        <item>10 items</item>
+        <item>15 items</item>
+        <item>20 items</item>
+        <item>25 items</item>
+        <item>30 items</item>
+    </string-array>
+
+    <string-array name="value_number_of_data">
+        <item>1</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+</resources>

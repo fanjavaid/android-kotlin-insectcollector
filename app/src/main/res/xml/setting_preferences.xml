@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="key_pref_listnumers"
+        android:title="Number items to show"
+        android:entries="@array/key_number_of_data"
+        android:entryValues="@array/value_number_of_data"
+        android:defaultValue="@string/default_value_number_of_data"
+        android:summary="This value impact on Home Screen data to show"/>
+</PreferenceScreen>

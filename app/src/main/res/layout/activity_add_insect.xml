@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="androidkotlin.fanjavaid.com.insectcollector.add_insects.AddInsectActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/image_add_insect_capture"
+            android:layout_width="0dp"
+            android:layout_height="230dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/text_add_insect_captured_img_content_desc"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/styled_square_dashed"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/button_add_insect_remove_capture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/styled_circle"
+            android:contentDescription="@string/text_add_insect_remove_captured_img_content_desc"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_clear_white"
+            tools:visibility="visible" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_insect_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_add_insect_capture">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edittext_add_insect_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_add_insect_name_label"
+                android:inputType="textPersonName"
+                android:paddingBottom="16dp"
+                android:textSize="16sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_insect_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/input_layout_insect_name"
+            app:layout_constraintStart_toStartOf="@+id/input_layout_insect_name"
+            app:layout_constraintTop_toBottomOf="@+id/input_layout_insect_name">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edittext_add_insect_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:gravity="bottom"
+                android:hint="@string/text_add_insect_info_label"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:maxLength="@integer/max_char"
+                android:paddingBottom="20dp"
+                android:textSize="16sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/button_add_insect_save"-->
+            <!--style="@style/Widget.AppCompat.Button.Colored"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"-->
+            <!--android:layout_marginStart="16dp"-->
+            <!--android:backgroundTint="@color/colorSuccess"-->
+            <!--android:text="@string/text_add_insect_save_button"-->
+            <!--android:textSize="14sp"-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Button"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/button_add_insect_discard" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button_add_insect_discard"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="16dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:backgroundTint="@color/colorDanger"-->
+            <!--android:text="@string/text_add_insect_discard_button"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/text_add_insect_remaining_char" />-->
+
+        <ImageView
+            android:id="@+id/image_add_insect_capture_action"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/input_layout_insect_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_photo_camera_grey" />
+
+        <TextView
+            android:id="@+id/text_add_insect_remaining_char"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/input_layout_insect_info"
+            app:layout_constraintTop_toBottomOf="@+id/input_layout_insect_info"
+            tools:text="30 / 500" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

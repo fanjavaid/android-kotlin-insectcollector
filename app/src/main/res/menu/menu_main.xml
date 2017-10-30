@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_sort"
+        android:title="@string/action_sort"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_sort" />
+
+    <item android:id="@+id/action_favorite"
+        android:title="@string/action_favorite"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_setting"
+        android:title="@string/action_setting"
+        app:showAsAction="never" />
+</menu>
